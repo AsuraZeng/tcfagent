@@ -1,0 +1,3328 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: tcf-agent
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .gitignore
+           .mailmap
+           agent/.settings/org.eclipse.cdt.core.prefs
+           agent/.settings/org.eclipse.cdt.ui.prefs
+           agent/CMakeLists.txt
+           agent/Makefile
+           agent/Makefile.inc
+           agent/bin/build-openssl
+           agent/bin/check-c-lib
+           agent/bin/get-os-tag
+           agent/bin/mcc
+           agent/bin/mcc-env
+           agent/bin/mlb
+           agent/bin/services-to-cflags
+           agent/bin/tests
+           agent/cmake/build-msvc-debug.bat
+           agent/cmake/build-msvc-release.bat
+           agent/msvc/agent-vc2015.sln
+           agent/msvc/agent-vc2015.vcxproj
+           agent/msvc/agent-vc2015.vcxproj.filters
+           agent/tcf/main/tcf-agent.init
+           agent/tcf/main/tcf-agent.spec
+           agent/tcf/services/stacktrace-ext.h
+           cmake-tcf-lib.txt
+           examples/daytime/Makefile
+           examples/daytime/readme.txt
+           examples/tcf_example.lua
+           server/.settings/org.eclipse.cdt.core.prefs
+           server/.settings/org.eclipse.cdt.ui.prefs
+           server/Makefile
+           server/msvc/server-vc2015.sln
+           server/msvc/server-vc2015.vcxproj
+           server/msvc/server-vc2015.vcxproj.filters
+           tests/client-test.tcf
+           tests/cmd-line/Makefile
+           tests/mem-leaks/Makefile
+           tests/test-dwarf/Makefile
+           tests/test-dwarf/msvc/test-dwarf-vc2015.sln
+           tests/test-dwarf/msvc/test-dwarf-vc2015.vcxproj
+           tests/test-dwarf/msvc/test-dwarf-vc2015.vcxproj.filters
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     agent/machine/i386/tcf/cpudefs-mdep.c
+           agent/machine/i386/tcf/cpudefs-mdep.h
+           agent/machine/i686/tcf/cpudefs-mdep.c
+           agent/machine/i686/tcf/cpudefs-mdep.h
+           agent/machine/x86_64/tcf/cpudefs-mdep.c
+           agent/machine/x86_64/tcf/regset-mdep.h
+           agent/system/Cygwin/tcf/regset.h
+           agent/system/Darwin/tcf/regset.h
+           agent/system/FreeBSD/tcf/regset.h
+           agent/system/MinGW/tcf/regset.h
+           agent/system/Msys/tcf/regset.h
+           agent/system/VxWorks/tcf/regset.h
+           agent/system/Windows/tcf/pthreads-win32.c
+           agent/system/Windows/tcf/regset.h
+           agent/tcf/framework/asyncreq.c
+           agent/tcf/framework/context-dispatcher.c
+           agent/tcf/framework/context-dispatcher.h
+           agent/tcf/framework/context-mux-ext.h
+           agent/tcf/framework/context-mux.h
+           agent/tcf/framework/cpudefs-mdep-mux.h
+           agent/tcf/framework/cpudefs-mux.h
+           agent/tcf/framework/tcf.h
+           agent/tcf/framework/trace.c
+           agent/tcf/main/logfilter.h
+           agent/tcf/services/contextquery.c
+           agent/tcf/services/dwarfecomp-ext.h
+           agent/tcf/services/dwarfframe.c
+           agent/tcf/services/dwarfframe.h
+           agent/tcf/services/dwarfreloc-ext.h
+           agent/tcf/services/linenumbers_elf-ext.h
+           agent/tcf/services/portforward_service.h
+           agent/tcf/services/symbols.c
+           agent/tcf/services/sysmon.c
+           server/tcf/config.h
+           tests/cmd-line/tcf/cmdline/cmdline-ext.c
+           tests/cmd-line/tcf/cmdline/cmdline-ext.h
+           tests/mem-leaks/tcf/config.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+
+Files:     agent/machine/a64/tcf/cpu-regs-gdb.h
+           agent/machine/a64/tcf/cpudefs-mdep.c
+           agent/machine/a64/tcf/disassembler-a64.c
+           agent/machine/a64/tcf/disassembler-a64.h
+           agent/machine/arm/tcf/cpu-regs-gdb.h
+           agent/machine/arm/tcf/disassembler-arm.c
+           agent/machine/arm/tcf/disassembler-arm.h
+           agent/machine/arm/tcf/disassembler-thumb.c
+           agent/machine/i386/tcf/cpu-regs-gdb.h
+           agent/machine/i386/tcf/disassembler-i386.c
+           agent/machine/i386/tcf/disassembler-i386.h
+           agent/machine/i686/tcf/disassembler-i686.c
+           agent/machine/i686/tcf/disassembler-i686.h
+           agent/machine/microblaze/tcf/cpu-regs-gdb.h
+           agent/machine/microblaze/tcf/cpudefs-mdep.c
+           agent/machine/microblaze/tcf/cpudefs-mdep.h
+           agent/machine/microblaze64/tcf/cpu-regs-gdb.h
+           agent/machine/powerpc/tcf/cpu-regs-gdb.h
+           agent/machine/ppc64/tcf/cpu-regs-gdb.h
+           agent/machine/x86_64/tcf/cpu-regs-gdb.h
+           agent/machine/x86_64/tcf/disassembler-x86_64.c
+           agent/machine/x86_64/tcf/disassembler-x86_64.h
+           agent/tcf/framework/client.c
+           agent/tcf/framework/sigsets.c
+           agent/tcf/main/gdb-rsp.c
+           agent/tcf/main/gdb-rsp.h
+           agent/tcf/services/disassembly.c
+           agent/tcf/services/disassembly.h
+           agent/tcf/services/elf-symbols-ext.h
+           agent/tcf/services/profiler.c
+           agent/tcf/services/profiler.h
+           tests/test-dwarf/tcf/services/elf-symbols-ext.h
+Copyright: 2013-2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+
+Files:     agent/system/Darwin/tcf/context-darwin.c
+           agent/system/FreeBSD/tcf/context-freebsd.c
+           agent/system/VxWorks/tcf/context-vxworks.c
+           agent/system/VxWorks/tcf/context-vxworks.h
+           agent/system/Windows/tcf/context-win32.c
+           agent/system/Windows/tcf/context-win32.h
+           agent/tcf/framework/context.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module handles process/thread OS contexts and their state machine.
+
+Files:     agent/tcf/framework/channel_tcp.c
+           agent/tcf/framework/json.c
+           agent/tcf/framework/json.h
+           agent/tcf/framework/streams.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Michael Sills-Lavoie(École Polytechnique de Montréal)  - ZeroCopy support
+
+Files:     agent/machine/riscv64/tcf/cpudefs-mdep.c
+           agent/machine/riscv64/tcf/regset-mdep.h
+           agent/tcf/services/contextreset.c
+           agent/tcf/services/contextreset.h
+Copyright: __NO_COPYRIGHT__ in: agent/machine/riscv64/tcf/cpudefs-mdep.c
+           __NO_COPYRIGHT__ in: agent/machine/riscv64/tcf/regset-mdep.h
+           __NO_COPYRIGHT__ in: agent/tcf/services/contextreset.c
+           __NO_COPYRIGHT__ in: agent/tcf/services/contextreset.h
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+
+Files:     agent/tcf/main/server.c
+           agent/tcf/main/server.h
+           server/tcf/main/server.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Server initialization code.
+
+Files:     agent/machine/powerpc/tcf/disassembler-powerpc.c
+           agent/machine/powerpc/tcf/disassembler-powerpc.h
+           agent/machine/powerpc/tcf/regset-mdep.h
+Copyright: 2013-2017 Stanislav Yakovlev and others.
+           2014 Stanislav Yakovlev.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev - initial API and implementation
+
+Files:     agent/tcf/services/linenumbers_mux.h
+           agent/tcf/services/symbols.h
+           agent/tcf/services/symbols_mux.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols service.
+
+Files:     agent/tcf/framework/config.h
+           examples/daytime/tcf/config.h
+           tests/test-dwarf/tcf/config.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This file contains "define" statements that control agent configuration.
+
+Files:     agent/tcf/framework/cpudefs.c
+           agent/tcf/framework/cpudefs.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module contains definitions of target CPU registers and stack frames.
+
+Files:     agent/machine/i386/tcf/dwarfreloc-mdep.h
+           agent/machine/x86_64/tcf/dwarfreloc-mdep.h
+Copyright: 2010-2018 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for X86.
+
+Files:     server/tcf/services/context-proxy.c
+           server/tcf/services/context-proxy.h
+Copyright: 2007-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module forwards handling of process/thread OS contexts to remote peer.
+
+Files:     agent/tcf/main/services.c
+           agent/tcf/main/services.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Services initialization code.
+
+Files:     agent/tcf/main/services-ext.h
+           tests/cmd-line/tcf/main/services-ext.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Services initialization code extension point.
+ If the agent is built with additional user-defined services,
+ a customized version of services-ext.h file can be added to compiler headers search path.
+
+Files:     agent/machine/i386/tcf/regset-mdep.h
+           agent/machine/i686/tcf/regset-mdep.h
+Copyright: 2012-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ additional CPU registers
+
+Files:     agent/tcf/services/memorymap.c
+           agent/tcf/services/memorymap.h
+Copyright: 2009-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module holds execution context memory maps.
+
+Files:     agent/tcf/main/main.c
+           agent/tcf/main/main_lua.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Agent main module.
+
+Files:     agent/tcf/http/http.c
+           agent/tcf/http/http.h
+Copyright: 2018-2019 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Implementation of HTTP interface.
+
+Files:     agent/tcf/framework/base64.c
+           agent/tcf/framework/base64.h
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements BASE64 encoding and decoding of binary data.
+ BASE64 encoding is adapted from RFC 1421, with one change:
+ BASE64 eliminates the "*" mechanism for embedded clear text.
+ Also TCF version of the encoding does not allow characters outside of the BASE64 alphabet.
+
+Files:     agent/tcf/services/profiler_sst.c
+           agent/tcf/services/profiler_sst.h
+Copyright: 2013-2017 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Generic sampling/stack-tracing profiler implementation.
+
+Files:     agent/tcf/framework/myalloc.c
+           agent/tcf/framework/myalloc.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Local memory heap manager.
+
+Files:     agent/tcf/services/filesystem.c
+           agent/tcf/services/filesystem.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Target service implementation: file system access (TCF name FileSystem)
+
+Files:     agent/tcf/framework/errors.c
+           agent/tcf/framework/errors.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module defines agent error codes in addition to system codes defined in errno.h
+
+Files:     agent/tcf/services/dprintf.c
+           agent/tcf/services/dprintf.h
+Copyright: 2013-2014 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ "dynamic printf" service
+
+Files:     agent/machine/microblaze/tcf/disassembler-microblaze.c
+           agent/machine/microblaze/tcf/disassembler-microblaze.h
+Copyright: 2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module implements disassembler for MicroBlaze.
+
+Files:     agent/tcf/framework/exceptions.c
+           agent/tcf/framework/exceptions.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Exception handling. Functionality is similar to C++ try/catch.
+ Usage example:
+
+Files:     agent/machine/microblaze/tcf/stack-crawl-microblaze.c
+           agent/machine/microblaze/tcf/stack-crawl-microblaze.h
+Copyright: 2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module implements stack crawl for MicroBlaze.
+
+Files:     agent/tcf/framework/signames.c
+           agent/tcf/framework/signames.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides POSIX signal names and descriptions.
+
+Files:     agent/cmake/build-gcc-debug.sh
+           agent/cmake/build-gcc-release.sh
+Copyright: 2011-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ *******************************************************************************
+
+Files:     agent/tcf/services/registers.c
+           agent/tcf/services/registers.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Registers - CPU registers access service.
+
+Files:     agent/tcf/services/memoryservice.c
+           agent/tcf/services/memoryservice.h
+Copyright: 2007-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Memory - memory access service.
+
+Files:     agent/machine/a64/tcf/stack-crawl-a64.c
+           agent/machine/a64/tcf/stack-crawl-a64.h
+Copyright: 2014-2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module implements stack crawl for ARM AArch64.
+
+Files:     agent/tcf/framework/plugins.c
+           agent/tcf/framework/plugins.h
+Copyright: 2009-2011 Philippe Proulx, École Polytechnique de Montréal Michael Sills-Lavoie, École Polytechnique de Montréal and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Philippe Proulx - initial plugins system
+ Michael Sills-Lavoie - deterministic plugins loading order
+ Michael Sills-Lavoie - plugin's shared functions
+ .
+ Plugins system.
+
+Files:     tests/test-dwarf/tcf/backend/backend.c
+           tests/test-dwarf/tcf/backend/backend.h
+Copyright: 2010-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Fake debug context API implementation. It used for testing symbol services.
+
+Files:     agent/tcf/framework/protocol.c
+           agent/tcf/framework/protocol.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF communication protocol.
+ This module handles registration of command and event handlers.
+ It is called when new messages are received and will dispatch
+ messages to the appropriate handler. It has no knowledge of what transport
+ protocol is used and what services do.
+
+Files:     agent/tcf/main/framework.c
+           agent/tcf/main/framework.h
+Copyright: 2016-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Framework initialization code.
+
+Files:     agent/tcf/framework/events.c
+           agent/tcf/framework/events.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Event queue manager.
+ Event is a data pointer plus a function pointer (a.k.a. event handler).
+ .
+ Posting event means placing event into event queue.
+ Dispatching event means removing event from the queue and then calling
+ event function with event data as argument.
+ .
+ All events are dispatched by single thread - dispatch thread. This makes it safe
+ to access global data structures from event handlers without further synchronization,
+ while allows for high level of concurrency.
+
+Files:     agent/tcf/services/stacktrace.c
+           agent/tcf/services/stacktrace.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Target service implementation: stack trace (TCF name StackTrace)
+
+Files:     agent/tcf/http/http-tcf.c
+           agent/tcf/http/http-tcf.h
+Copyright: 2018-2019 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module supports execution of TCF commands over HTTP connection.
+
+Files:     agent/tcf/services/pathmap.c
+           agent/tcf/services/pathmap.h
+Copyright: 2010-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Path Map service.
+ The service manages file path mapping rules.
+
+Files:     agent/tcf/services/breakpoints.c
+           agent/tcf/services/breakpoints.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements Breakpoints service.
+ The service maintains a list of breakpoints.
+ Each breakpoint consists of one or more conditions that determine
+ when a program's execution should be interrupted.
+
+Files:     agent/tcf/services/streamsservice.c
+           agent/tcf/services/streamsservice.h
+Copyright: 2009-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Streams - generic service to support streaming of data between host and remote agents.
+ .
+ The service supports:
+ 1. Asynchronous overlapped data streaming: multiple 'read' or 'write' command can be issued at same time, both peers
+ can continue data processing concurrently with data transmission.
+ 2. Multicast: multiple clients can receive data from same stream.
+ 3. Subscription model: clients are required to expressed interest in particular streams by subscribing for the service.
+ 4. Flow control: peers can throttle data flow of individual streams by delaying 'read' and 'write' commands.
+
+Files:     agent/tcf/services/tcf_elf.c
+           agent/tcf/services/tcf_elf.h
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements reading and caching of ELF files.
+
+Files:     agent/tcf/services/elf-loader.c
+           agent/tcf/services/elf-loader.h
+Copyright: 2011-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements access to ELF dynamic loader data.
+
+Files:     agent/tcf/framework/waitpid.c
+           agent/tcf/framework/waitpid.h
+Copyright: 2009-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides notifications of process/thread exited or stopped.
+
+Files:     agent/tcf/services/diagnostics.c
+           agent/tcf/services/diagnostics.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Diagnostics service.
+ This service is used for framework and agents testing.
+
+Files:     examples/daytime/tcf/main/services-ext.h
+           tests/mem-leaks/tcf/main/services-ext.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Services initialization code extension point.
+ If the agent is built with additional user-defined services,
+ a customized version of services-ext.h file can be added to compiler headers search paths.
+
+Files:     agent/tcf/services/vm.c
+           agent/tcf/services/vm.h
+Copyright: 2011-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ A virtual machine that executes DWARF expressions.
+
+Files:     agent/tcf/main/test.c
+           agent/tcf/main/test.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Agent self-testing service.
+
+Files:     agent/machine/a64/tcf/regset-mdep.h
+           agent/machine/microblaze/tcf/regset-mdep.h
+Copyright: 2015-2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ offset to be applied to the PC after a software trap
+
+Files:     tests/mem-leaks/tcf/services/memtrace.c
+           tests/mem-leaks/tcf/services/memtrace.h
+Copyright: 2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Memory Trace service.
+
+Files:     agent/tcf/framework/outputbuf.c
+           agent/tcf/framework/outputbuf.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Utility module that implements an abstract output queue.
+
+Files:     agent/tcf/services/dwarfreloc.c
+           agent/tcf/services/dwarfreloc.h
+Copyright: 2010-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception *** check multiple exceptions ***
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements ELF relocation records handling for reading DWARF debug information.
+ .
+ Functions in this module use exceptions to report errors, see exceptions.h
+
+Files:     agent/tcf/services/dwarfecomp.c
+           agent/tcf/services/dwarfecomp.h
+Copyright: 2011-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception *** check multiple exceptions ***
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Transformation of DWARF expressions to a portable form.
+ .
+ Functions in this module use exceptions to report errors, see exceptions.h
+
+Files:     agent/tcf/services/dwarfio.c
+           agent/tcf/services/dwarfio.h
+Copyright: 2006-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception *** check multiple exceptions ***
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements low-level functions for reading DWARF debug information.
+ .
+ Functions in this module use exceptions to report errors, see exceptions.h
+
+Files:     agent/tcf/services/runctrl-ext.h
+Copyright: 2015 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Extension point definitions for runctrl.c.
+
+Files:     agent/tcf/framework/mdep.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Nokia - Symbian support
+ .
+ Machine and OS dependent definitions.
+ This module implements host OS abstraction layer that helps make
+ agent code portable between Linux, Windows, VxWorks and potentially other OSes.
+ .
+ mdep.h must be included first, before any other header files.
+
+Files:     agent/machine/arm/tcf/dwarfreloc-mdep.h
+Copyright: 2013-2014 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for ARM.
+
+Files:     agent/machine/riscv64/tcf/dwarfreloc-mdep.h
+Copyright: __NO_COPYRIGHT__ in: agent/machine/riscv64/tcf/dwarfreloc-mdep.h
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ This module provides CPU specific ELF definitions for riscv64.
+
+Files:     agent/tcf/main/main_hooks.h
+Copyright: 2013 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Hook definitions for main.c.  This file is intended to be empty.
+ Default hook definitions are intended to be defined in main.c
+
+Files:     agent/tcf/services/funccall.h
+Copyright: 2012 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module contains definitions for enabling function call injection on the target.
+
+Files:     agent/tcf/framework/mdep.c
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Nokia - Symbian support
+ .
+ Machine and OS dependent definitions.
+ This module implements host OS abstraction layer that helps make
+ agent code portable between Linux, Windows, VxWorks and potentially other OSes.
+
+Files:     server/tcf/main/server_hooks.h
+Copyright: 2013 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Hook definitions for server.c.  This file is intended to be empty.
+ Default hook definitions are intended to be defined in server.c
+
+Files:     agent/machine/arm/tcf/cpudefs-mdep.h
+Copyright: 2013 Stanislav Yakovlev and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev - initial API and implementation
+ Emmanuel Touron (Wind River) - initial ARM stepping emulation
+ .
+ This module provides CPU specific definitions for ARM.
+
+Files:     agent/machine/riscv64/tcf/cpudefs-mdep.h
+Copyright: __NO_COPYRIGHT__ in: agent/machine/riscv64/tcf/cpudefs-mdep.h
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ This module provides CPU specific definitions for riscv64.
+
+Files:     agent/machine/powerpc/tcf/dwarfreloc-mdep.h
+Copyright: 2014 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for PowerPC.
+
+Files:     agent/tcf/framework/context-ext.h
+Copyright: 2013 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This file provides definition of user specific debug context extensions. It is
+ included into context.h.
+ Replace it with your own version if you want to add extensions to debug
+ context interface.
+ .
+ Intentionally blank
+
+Files:     agent/tcf/framework/mdep-ptrace.h
+Copyright: 2018 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Machine and OS dependent definitions for ptrace.
+
+Files:     agent/tcf/services/breakpoints-ext.h
+Copyright: 2015 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Extension point definitions for breakpoint.c.
+
+Files:     agent/tcf/framework/channel_lws_ext.h
+Copyright: 2016 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Hook definition for LWS callback.  This hook can be used to plug your own
+ code in the various libwebsockets hooks. For more information about the possible
+ value for those hooks refer to libwebsockets documentation. The return
+ value is either ignored or a value different from 0 indicates an error.
+ The arguments are exactly the same as for libwebsockets hook except for the first
+ one which provides a pointer to a location where you can store callback specific data.
+
+Files:     agent/machine/microblaze/tcf/dwarfreloc-mdep.h
+Copyright: 2013-2017 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for MicroBlaze.
+
+Files:     agent/tcf/framework/sigsets.h
+Copyright: 2013 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ SigSet type definition.
+ The type used to provide support for more than 32 signals,
+ e.g. POSIX real-time signals and Windows exceptions.
+
+Files:     agent/machine/ppc64/tcf/dwarfreloc-mdep.h
+Copyright: 2015-2018 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for PPC64.
+ .
+ relocation type definition
+
+Files:     agent/machine/a64/tcf/cpudefs-mdep.h
+Copyright: 2015 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module provides CPU specific definitions for ARM 64.
+
+Files:     agent/tcf/framework/mdep-threads.h
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Nokia - Symbian support
+ .
+ Machine and OS dependent definitions for threads.
+
+Files:     agent/machine/a64/tcf/dwarfreloc-mdep.h
+Copyright: 2014 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for ARM A64.
+
+Files:     agent/tcf/framework/cpudefs-ext.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This file provides debug context register definitions and lookup functions.
+ It is included into cpudefs.c.
+ The code assumes that all contexts share same register definitions.
+ If it is not the case, this file needs to be substituted with alternative implementation.
+
+Files:     agent/tcf/framework/mdep-inet.h
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Nokia - Symbian support
+ .
+ Machine and OS dependent definitions for networking.
+
+Files:     agent/machine/sparc/tcf/dwarfreloc-mdep.h
+Copyright: 2018 Cobham Gaisler and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Cobham Gaisler - initial API and implementation
+ .
+ This module provides CPU specific ELF definitions for SPARC.
+
+Files:     agent/machine/powerpc/tcf/cpudefs-mdep.h
+Copyright: 2013 Stanislav Yakovlev.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev - initial API and implementation
+ .
+ This module provides CPU specific definitions for PowerPC.
+
+Files:     agent/tcf/framework/mdep-fs.h
+Copyright: 2013-2014 Xilinx, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Machine and OS dependent definitions for file system.
+
+Files:     agent/machine/x86_64/tcf/cpudefs-mdep.h
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __HEADER___
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides CPU specific definitions for X86.
+
+Files:     agent/tcf/services/discovery.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements auto-discovery and Locator service.
+
+Files:     agent/system/Windows/tcf/pthreads-win32.h
+Copyright: 2011-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ PThreads emulation for Windows.
+
+Files:     agent/tcf/services/processes.h
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Processes - process control service.
+ Processes service provides access to the target OS's process information,
+ allows to start and terminate a process, and allows to attach and
+ detach a process for debugging. Debug services, like Memory and Run Control,
+ require a process to be attached before they can access it.
+
+Files:     agent/tcf/framework/peer.c
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements peer server management.
+
+Files:     agent/tcf/services/processes.c
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Processes - process control service.
+ Processes service provides access to the target OS's process information,
+ allows to start and terminate a process, and allows to attach and
+ detach a process for debugging. Debug services, like Memory and Run Control,
+ require a process to be attached before they can access it.
+ .
+ TODO: It should be possible to filter processes on a criteria (user, name, etc)
+
+Files:     agent/tcf/framework/asyncreq.h
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Asynchronous system call request interface
+
+Files:     agent/machine/arm/tcf/stack-crawl-arm.h
+Copyright: 2013-2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module implements stack crawl for ARM processor.
+
+Files:     agent/tcf/main/main_reg.c
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Registry main module.
+ TCF Registry is dumbed down version of TCF Agent that provides no services.
+ All it does is running TCF UDP auto-discovery protocol.
+
+Files:     agent/tcf/framework/inputbuf.c
+Copyright: 2007-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Michael Sills-Lavoie(École Polytechnique de Montréal)  - ZeroCopy support
+ .
+ Implements input buffer used by unbuffered channel transports.
+
+Files:     tests/test-dwarf/tcf/framework/cpudefs-ext.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ All registers access in implemented in backend.c
+
+Files:     agent/tcf/services/dwarf.h
+Copyright: 1996-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ DWARF Debugging Information Format.
+
+Files:     agent/tcf/services/linenumbers_mux.c
+Copyright: 2007-2015 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Line Numbers Muliplexer - Provides a multiplexer to support several
+ file format in the same TCF agent and in the same debug session.
+ .
+ The multiplexer delegates actual search for line number info to info readers
+
+Files:     agent/tcf/services/contextquery.h
+Copyright: 2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements a query based system to specify subsets of contexts.
+ The queries specifies context properties and what values they need to have to match.
+ In addition a query can filter based on a contexts ancestors in the context hierarchy.
+ .
+ Syntax and Semantics
+
+Files:     agent/tcf/framework/ip_ifc.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ IP interface list
+
+Files:     agent/tcf/services/linenumbers.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF service Line Numbers
+ The service associates locations in the source files with the corresponding
+ machine instruction addresses in the executable object.
+
+Files:     agent/tcf/config.h
+Copyright: 9999-20018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ This file contains "define" statements that control agent configuration.
+ This version of configuration file uses default settings from tcf/framework/config.h
+
+Files:     agent/machine/arm/tcf/cpudefs-mdep.c
+Copyright: 2013-2019 Stanislav Yakovlev and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev           - initial API and implementation
+ Emmanuel Touron (Wind River) - initial ARM stepping emulation
+ Stanislav Yakovlev           - [404627] Add support for ARM VFP registers
+
+Files:     agent/tcf/framework/shutdown.c
+Copyright: 2012-2017 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Shutdown manager.
+
+Files:     agent/tcf/framework/compression.c
+Copyright: 2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Implements RFC 1951: http://www.ietf.org/rfc/rfc1951.txt
+ .
+ RFC 1951 defines a lossless compressed data format that
+ compresses data using a combination of the LZ77 algorithm and Huffman coding.
+ .
+ Only decompressor is implemented.
+
+Files:     agent/tcf/main/cmdline.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Command line interpreter.
+
+Files:     server/tcf/framework/cpudefs-ext.h
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Intentionally blank
+
+Files:     agent/machine/powerpc/tcf/cpudefs-mdep.c
+Copyright: 2013-2014 Stanislav Yakovlev and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev - initial API and implementation
+ Stanislav Yakovlev - [417363] add support for PowerPC floating point registers
+
+Files:     agent/tcf/services/dwarfexpr.c
+Copyright: 2008-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements DWARF expressions evaluation.
+
+Files:     agent/tcf/framework/cache.c
+Copyright: 2009-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Abstract asynchronous data cache support.
+
+Files:     agent/tcf/framework/channel.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Transport agnostic TCF communication channel interface.
+
+Files:     agent/tcf/services/portforward_proxy.c
+Copyright: 2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements the PortForward service proxy and the PortServer
+ proxy.
+ The PortForward service proxy allows accessing the PortForward service of
+ a remote peer from the current agent.
+ The PortServer service allows creating a local port to access a remote
+ port on the peer using the PortForward service proxy.
+
+Files:     agent/system/GNU/Linux/tcf/regset.h
+Copyright: 2009-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Stanislav Yakovlev - [404627] Add support for ARM VFP registers
+
+Files:     agent/machine/arm/tcf/regset-mdep.h
+Copyright: 2013-2018 Stanislav Yakovlev and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Stanislav Yakovlev - initial API and implementation
+ Emmanuel Touron (Wind River) - initial HW Breakpoint support
+ .
+ offset to be applied to the PC after a software trap
+
+Files:     agent/tcf/services/portforward_proxy.h
+Copyright: 2015-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements port forwarding service.
+
+Files:     agent/tcf/services/linenumbers.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF service line Numbers - common part.
+ .
+ The service associates locations in the source files with the corresponding
+ machine instruction addresses in the executable object.
+
+Files:     agent/tcf/services/terminals.c
+Copyright: 2008-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Intel - implemented terminals service
+ .
+ TCF Terminals service implementation.
+
+Files:     agent/tcf/framework/inputbuf.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Michael Sills-Lavoie(École Polytechnique de Montréal)  - ZeroCopy support
+ .
+ Transport agnostic input buf interface
+
+Files:     agent/tcf/framework/proxy.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements tunneling of TCF messages to another target on behalf of a client.
+ This service intended to be used when a client has no direct access to a target.
+
+Files:     agent/tcf/framework/channel.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Transport agnostic channel implementation.
+ .
+ TODO: Somehow we should make it clear what needs to be done to add another transport layer.
+ Perhaps have a template or a readme file for it.
+
+Files:     agent/tcf/framework/shutdown.h
+Copyright: 2012 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Shutdown manager allows subsystems to register for notification to
+ support controlled shutdown of the TCF framework and its add-ons.
+ .
+ A subsystem registers for notificatios by calling
+
+Files:     agent/machine/arm/tcf/stack-crawl-arm-ext.h
+Copyright: 2015 Wind River
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River - initial API and implementation
+ .
+ This module implements stack crawl extensions for ARM processor.
+
+Files:     agent/tcf/services/linenumbers_elf.c
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF service line Numbers - ELF version.
+ .
+ The service associates locations in the source files with the corresponding
+ machine instruction addresses in the executable object.
+
+Files:     examples/daytime/tcf/services/daytime.h
+Copyright: 2008-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Sample TCF service header file.
+
+Files:     agent/system/Windows/tcf/windbgcache.c
+Copyright: 2008-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides access to Windows Portable Executable debug information.
+ Current implementation delegates all its job to DBGHELP.DLL.
+
+Files:     agent/tcf/framework/link.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Double linked list support.
+
+Files:     agent/tcf/services/funccall.c
+Copyright: 2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements preparation of a new stack before calling a function.
+ This code is a stub. Downstream code will provide real implementation.
+
+Files:     agent/tcf/main/cmdline.c
+Copyright: 2007-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Michael Sills-Lavoie - client enhancement system
+ .
+ Command line interpreter.
+
+Files:     agent/tcf/framework/compression.h
+Copyright: 2018 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Implements RFC 1951: http://www.ietf.org/rfc/rfc1951.txt
+ Only decompressor is implemented.
+
+Files:     agent/tcf/framework/context-dispatcher-ext.h
+Copyright: 2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Context dispatcher extension point.
+ If the agent is built with additional context interfaces,
+ a customized version of context-dispatcher-ext.h file can be added to
+ compiler headers search path.
+
+Files:     agent/tcf/services/terminals.h
+Copyright: 2008-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Intel - implemented terminals service
+ .
+ TCF Terminals service header file.
+
+Files:     agent/tcf/services/elf-symbols.h
+Copyright: 2012-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements ELF-specific symbol's API
+
+Files:     agent/tcf/services/symbols_common.c
+Copyright: 2012-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols service - common code that is shared between different implementations of the service.
+
+Files:     agent/tcf/services/linenumbers_proxy.c
+Copyright: 2011-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF service line Numbers - proxy version.
+ .
+ The service associates locations in the source files with the corresponding
+ machine instruction addresses in the executable object.
+
+Files:     agent/tcf/framework/cache.h
+Copyright: 2009-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Abstract asynchronous data cache support.
+ .
+ In TCF, asynchronous caches are used to implement software design,
+ which we call ACPM (Asynchronous Cache Programming Model).
+ ACPM is formalized Programming Pattern for guaranteed data consistency
+ when dealing with multiple remote data sources.
+ .
+ Usage example.
+ This example assumes that Context represents execution context on remote target,
+ and context data is kept in a cache that is updated on demand by sending asynchronous
+ data requests to a remote peer.
+ .
+ The example shows how to implement cache client, in this case TCF command handle,
+ that handle cache misses by waiting until the cache is updated and the re-executing
+ cache client code.
+
+Files:     agent/tcf/services/sysmon.h
+Copyright: 2007-2015 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Target service implementation: system monitor (TCF name SysMonitor)
+
+Files:     agent/tcf/services/dwarfcache.h
+Copyright: 2006-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements caching of DWARF debug information.
+ .
+ Cached data stays in memory at least until end of the current event dispatch cycle.
+
+Files:     agent/tcf/main/framework-ext.h
+Copyright: 2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Framework initialization code extension point.
+ If the agent is built with additional user-defined framework libraries,
+ a customized version of framework-ext.h file can be added to compiler headers search path.
+
+Files:     agent/tcf/framework/streams.c
+Copyright: 2007-2013 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Abstract byte stream. Bytes in the stream can be divided into groups - messages.
+
+Files:     agent/tcf/services/expressions.h
+Copyright: 2007-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Expression evaluation service.
+
+Files:     agent/tcf/services/expressions.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Expression evaluation service.
+ .
+ Extensions to regular C/C++ syntax:
+ 1. Special characters in identifiers: $"X", or just "X" if followed by ::
+ where X is object name that can contain any characters.
+ 2. Symbol IDs in expressions: ${X}
+ where X is symbol ID as returned by symbols service.
+ 3. CPU registers: $X
+ where X is a register name, e.g. $ax
+
+Files:     agent/tcf/framework/peer.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Peer server management interface
+
+Files:     agent/tcf/services/discovery_udp.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Simple UDP based discovery server interface
+
+Files:     agent/tcf/services/symbols_proxy.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols service - proxy implementation, gets symbols information from host.
+
+Files:     agent/tcf/main/main_client.c
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF client main module.
+
+Files:     agent/tcf/services/symbols_elf.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols service - ELF version.
+
+Files:     agent/system/GNU/Linux/tcf/context-linux.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ Stanislav Yakovlev - [404627] Add support for ARM VFP registers
+ .
+ This module handles process/thread OS contexts and their state machine.
+
+Files:     agent/tcf/framework/pid-hash.h
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This is utility module that contains context PID hash table implementation.
+ System specific debug context code can use this module to implement context lookup.
+ .
+ NOTE: Some clients might want to reuse PID hash table for
+
+Files:     agent/tcf/framework/ip_ifc.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements IP interface list.
+
+Files:     agent/tcf/framework/channel_tcp.h
+Copyright: 2007-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCP channel interface
+
+Files:     agent/machine/arm/tcf/stack-crawl-arm.c
+Copyright: 2013-2019 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ This module implements stack crawl for ARM processor.
+ .
+ This code is based on ideas from a work that was published by
+ Michael McTernan with following disclaimer:
+ .
+ The source code for the stack unwinder is released as public domain.
+ This means that there is no copyright and anyone is able to take a
+ copy for free and use it as they wish, with or without modifications,
+ and in any context they like, commercially or otherwise.
+ .
+ The only limitation is that I don't guarantee that the software is fit
+ for any purpose or accept any liability for it's use or misuse -
+ the software is without warranty.
+ .
+ Michael McTernan
+ Michael.McTernan.2001@cs.bris.ac.uk
+
+Files:     agent/tcf/services/discovery_udp.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements UDP based service discovery.
+ .
+ The discovery protocol uses unicast and multicast UDP packets to propagate information
+ about available TCF peers. The protocol is truly distributed - all participants have
+ same functionality and no central authority is defined.
+ .
+ TCF discovery scope is one subnet. Access across subnets is supported by TCF proxy.
+ .
+ TCF discovery participants use a dedicated UDP port - 1534, however discovery will
+ work fine if the port is not available for some participants, but at least one
+ participant on a subnet must be able to bind itself to the default port, otherwise the protocol
+ will not function properly. An agent that owns a default port is called "master",
+ an agent that owns non-default port is called "slave".
+ .
+ Every slave will check periodically availability of default port, and can become a master if
+ the port becomes available.
+ .
+ Since slaves cannot receive multicast packets, each agent maintains a list of slaves,
+ and uses unicast packets to sent info to agents from the list.
+
+Files:     agent/tcf/framework/channel_lws.h
+Copyright: 2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ WebSocket channel interface based on libwebsockets
+
+Files:     agent/tcf/main/main_va.c
+Copyright: 2007-2012 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Value Add main module.
+ .
+ This implementation of Value Add provides only few services,
+ but it supports Locator.redirect command, which can forward TCF traffic to other TCF agents.
+ .
+ The code is intended to be an example of service proxing implementation.
+
+Files:     agent/tcf/framework/channel_pipe.h
+Copyright: 2010-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Named pipe channel interface
+
+Files:     agent/tcf/services/portforward_service.c
+Copyright: 2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements PortForward service.
+ The service allows a client to open a port and read/write to/from
+ this port using a stream.
+ The type of ports supported is OS specific but currently UDP, TCP and
+ serial ports are supported.
+
+Files:     agent/tcf/framework/channel_lws.c
+Copyright: 2016-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements input and output stream over WebSocket (both secured and
+ insecured).
+ This is implemented on top of libwebsockets library; for more information
+ about libwebsockets, look at https://libwebsockets.org/.
+
+Files:     agent/tcf/framework/proxy.c
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements tunneling of TCF messages to another target on behalf of a client
+ This service intended to be used when a client has no direct access to a target.
+
+Files:     agent/tcf/services/runctrl.c
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Target service implementation: run control (TCF name RunControl)
+
+Files:     agent/tcf/framework/channel_pipe.c
+Copyright: 2010-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Implements input and output stream over named pipe transport.
+
+Files:     agent/tcf/services/symbols_win32.c
+Copyright: 2007-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols service - Windows version
+
+Files:     agent/tcf/services/linenumbers_win32.c
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF service line Numbers
+ The service associates locations in the source files with the corresponding
+ machine instruction addresses in the executable object.
+
+Files:     agent/system/Windows/tcf/windbgcache.h
+Copyright: 2008-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module provides access to Windows Portable Executable debug information.
+
+Files:     agent/tcf/framework/context.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module handles debug contexts and their state machine.
+
+Files:     agent/tcf/services/discovery.h
+Copyright: 2007-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Discovery interface
+
+Files:     examples/daytime/tcf/services/daytime.c
+Copyright: 2008-2011 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Sample TCF service implementation.
+
+Files:     agent/tcf/main/main_log.c
+Copyright: 2007-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Logger main module.
+ .
+ TCF Logger is a simple TCF agent that does not provide any services itself,
+ instead it forward all TCF traffic to another agent.
+ Logger prints all messages it forwards.
+ It can be used as diagnostic and debugging tool.
+
+Files:     agent/tcf/services/elf-symbols.c
+Copyright: 2012-2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements ELF specific symbol's API
+
+Files:     agent/tcf/services/symbols_mux.c
+Copyright: 2012-2017 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Symbols Muliplexer - Provides a multiplexer to support several
+ file format in the same TCF agent and in the same debug session.
+ .
+ The multiplexer delegates actual search for symbols info to info readers
+
+Files:     agent/tcf/framework/client.h
+Copyright: 2017 Xilinx, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Xilinx - initial API and implementation
+ .
+ Abstract representation of a client connection.
+ It includes both TCF channels and other connection types, for example, GDB connections.
+ Service implementations can use this API to track client connection events.
+
+Files:     agent/tcf/framework/trace.h
+Copyright: 2007-2018 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Log file and tracing.
+
+Files:     agent/tcf/main/logfilter.c
+Copyright: 2014 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ TCF Logger filter routines.
+ .
+ Set of routines to filter queries and events.
+
+Files:     agent/tcf/services/runctrl.h
+Copyright: 2007-2016 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ Target service implementation: run control (TCF name RunControl)
+ .
+ All run control contexts are grouped by corresponding memory address spaces.
+ Other service implementations can ask run control to execute arbitrary code while all contexts in
+ a particular group - address space - are stopped.
+ Run control service manages a queue of such requests ("safe events queue") and
+ makes a fair effort to optimize such requests. It can, for example, coalesce
+ multiple requests for same address space, which often significantly improves performance.
+ "Safe event" code is guaranteed to run while relevant contexts are stopped and will not be resumed
+ during the event execution, with a single exception of single instruction step support
+ that would resume only the specified context.
+ .
+ Run control service distinguishes between context being stopped and being intercepted.
+ A context is stopped when it is suspended for any reason - breakpoint, safe event, a suspend request, etc..
+ A context is intercepted when it is reported up (to UI or value-add) as suspended.
+ .
+ For example, a breakpoint hit handling sequence looks like this:
+
+Files:     agent/tcf/services/dwarfcache.c
+Copyright: 2007-2019 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception *** check multiple exceptions ***
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements caching of DWARF debug information.
+ .
+ Functions in this module use exceptions to report errors, see exceptions.h
+
+Files:     agent/tcf/services/dwarfexpr.h
+Copyright: 2008-2015 Wind River Systems, Inc. and others.
+License:   __UNKNOWN__ with unknown exception *** check multiple exceptions ***
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ You may elect to redistribute this code under either of these licenses.
+ .
+ Contributors:
+ Wind River Systems - initial API and implementation
+ .
+ This module implements DWARF expressions evaluation.
+ .
+ Functions in this module use exceptions to report errors, see exceptions.h
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         examples/daytime/edl-v10.html
+#         examples/daytime/about.html
+#         examples/daytime/.cproject
+#         examples/daytime/.project
+#         agent/edl-v10.html
+#         agent/about.html
+#         agent/.cproject
+#         agent/.project
+#         server/edl-v10.html
+#         server/about.html
+#         server/.cproject
+#         server/.project
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
